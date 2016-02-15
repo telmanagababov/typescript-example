@@ -1,6 +1,4 @@
-/// <reference path="Validation.ts" />
-var Validation;
-(function (Validation) {
+define(["require", "exports"], function (require, exports) {
     var numberRegexp = /^[0-9]+$/;
     var ZipCodeValidator = (function () {
         function ZipCodeValidator() {
@@ -10,6 +8,6 @@ var Validation;
         };
         return ZipCodeValidator;
     })();
-    Validation.ZipCodeValidator = ZipCodeValidator;
-})(Validation || (Validation = {}));
+    return ZipCodeValidator;
+});
 //# sourceMappingURL=ZipCodeValidator.js.map

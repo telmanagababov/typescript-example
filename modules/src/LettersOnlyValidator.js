@@ -1,6 +1,4 @@
-/// <reference path="Validation.ts" />
-var Validation;
-(function (Validation) {
+define(["require", "exports"], function (require, exports) {
     var lettersRegexp = /^[A-Za-z]+$/;
     var LettersOnlyValidator = (function () {
         function LettersOnlyValidator() {
@@ -10,6 +8,6 @@ var Validation;
         };
         return LettersOnlyValidator;
     })();
-    Validation.LettersOnlyValidator = LettersOnlyValidator;
-})(Validation || (Validation = {}));
+    return LettersOnlyValidator;
+});
 //# sourceMappingURL=LettersOnlyValidator.js.map
